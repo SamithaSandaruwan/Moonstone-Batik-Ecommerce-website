@@ -1,0 +1,141 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Contact Us</title>
+        <link rel="stylesheet" href="index.css">
+        <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,300;0,500;0,600;0,700;1,300;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    </head>
+    <body>
+            <div class="container">
+                <div class="navbar">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/logo.png" width="125px"></a>
+                    </div>
+                    <nav>
+                        <ul id="menuItems">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="products.html">Products</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="contactus.html">Contact</a></li>
+                            <li><a href="account.html">Account</a></li>
+                        </ul>
+                    </nav>
+                    <a href="cart.html"><img src="images/cart.png" width="30px" height="30px"></a>
+                    <img src="images/menu.png" class="menu-icon" onclick="menutoggle()">
+                </div>
+            </div>
+
+            <!--------Contactus  Page-------->
+        <section class="contact">
+            <div class="contact">
+                <div class="content">
+                    <h2>Contact Us</h2>
+                    <p>Contact us details</p>
+                </div>
+            </div>
+            <div class="container1">
+                <div class="contactInfo">
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-map-location-dot"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Address</h3>
+                            <p>144/I Weehena,<br>Mahawawa</p>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Email</h3>
+                            <p> Moonstonesbatik@gmail.com</p>
+                        </div>
+                    </div><div class="box">
+                        <div class="icon">
+                            <i class="fa-solid fa-phone"></i>
+                        </div>
+                        <div class="text">
+                            <h3>Contact Number</h3>
+                            <p>0778060079</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contactForm">
+                    <form method="post" action="contactus.php">
+                        <h2>Send Message</h2>
+                        <div class="inputBox">
+                            <input type="text" name="username" required="required">
+                            <span>Full Name</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="email" name="email" required="required">
+                            <span>Email</span>
+                        </div>
+                        <div class="inputBox">
+                            <textarea name="msg" required="required"></textarea>
+                            <span>Type Your Message</span>
+                        </div>
+                        <div class="inputBox">
+                            <input type="submit" name="" value="Send">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>    
+
+
+            <div class="footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="footer-col-1">
+                            <h3>Moonstone Batik</h3>
+                            <p>Handloom batik is the most valuable batik in the world.Hurry up and select your batik here.</p>
+                        </div>
+                        <div class="footer-col-2">
+                            <a href="index.html"><img src="images/logo.png"></a>
+                            <p>Home Made Traditional Batik</p>
+                        </div>
+                        <div class="footer-col-3">
+                            <h3>Useful links</h3>
+                            <ul>
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="products.html">Products</a></li>
+                                <li><a href="contactus.html">Contact Us</a></li>
+                                <li><a href="account.html">Account</a></li>
+                            </ul>
+                        </div>
+                        <div class="footer-col-4">
+                            <h3>Follow Us</h3>
+                            <ul>
+                                <li><a href="">Facebook</a></li>
+                                <li><a href="">Instagram</a></li>
+                                <li><a href="">Youtube</a></li>
+                                <li><a href="">Twitter</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <hr>
+                    <p class="copyright">Copyright 2023  &#169; in Moonstone </p>
+                </div>
+            </div> 
+    <!-----js for toggle-->
+    <script>
+        var menuItems=document.getElementById("menuItems");
+        menuItems.style.maxHeight="200px";
+
+        function menutoggle(){
+            if (menuItems.style.maxHeight == "0px") {
+                menuItems.style.maxHeight = "200px"
+            } else {
+                menuItems.style.maxHeight = "0px"
+            }
+        }
+
+    </script>
+    </body>
+</html>
